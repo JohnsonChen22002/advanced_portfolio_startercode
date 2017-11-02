@@ -11,6 +11,7 @@
 -->
 
 <!DOCTYPE html>
+<html>
 
 <head>
     <!--Title -->
@@ -18,107 +19,153 @@
     <!-- Your CSS  -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap CSS  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Fontawesome CSS  -->
 
+    <style>
+    h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-style: double hidden double hidden;
+    }
+    
+    body {
+      position: relative; 
+    }
+    #section1 { padding-top:50px; height:700px; background-color: #42d9f4;}
+    #section2 { padding-top:50px; height:750px; background-color: #dff441;}
+    #section3 { padding-top:50px; height:600px; background-color: #efac26;}
+    </style>
 </head>
 
-<body style="background-color: #2ed161">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <!-- Nav Bar -->
-    <nav class="navbar navbar-inverse bg-primary">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div id="navblue" class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
                 <a class="navbar-brand" id="brand">Johnson Chen</a>
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul id="main-nav" class="nav navbar-nav">
-                    <li class="active"><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul id="main-nav" class="nav navbar-nav">
+                        <li><a id="navbarword" href="#section1">-About me-</a></li>
+                        <li><a id="navbarword" href="#section2">-Projects-</a></li>
+                        <li><a id="navbarword" href="#section3">-Contact me-</a></li>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </nav>
 
     <!-- Portfolio Grid Section -->
 
     <!-- About Section -->
-    <div class="container">
+    <div id="section1" class="container-fluid">
+        <h1>[ About Me ]</h1>
         <div class="row">
             <div class="col-xs-6">
                 <img id="Johnson" src="images/Johnson.jpg">
             </div>
             <div class="col-xs-6">
                 <div id="jumbotron" class="jumbotron">
-                    <h1>About Me</h1>
-                    <p id="aboutme">Hi guys! My name is Johnson Chen. I am 15 years old. I like to code in my free time. I go to High School of Language and Diplomacy. I live in New York. I am currently in ScriptEd Advanced Class.</p>
+                    <p id="aboutme">Hi guys! My name is Johnson Chen. I am 15 years old. I like to code in my free time. I go to High School of Language and Diplomacy. I live in New York. I am currently in ScriptEd Advanced Class. My favorite thing to do in coding is to copy and paste in order to help me at first, then I change the code to my favor.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Projects -->
+    <!-- Projects -->
+    <div id="section2" class="container-fluid">
+        <h1>[ Projects ]</h1>
         <div class="jumbotron">
-            <h1>Projects</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="thumbnail">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="thumbnail">
+                        <img src="images/ThePurrfectScoop.PNG">
+                        <div class="caption">
+                            <h3>ThePurrfectScoop</h3>
+                            <p>First Official Project with my partner Jason Paulino. This project, ThePurrfectScoop, is made for our client, Shane Morris.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Live Preview</a> 
+                            <a href="#" id="left" class="btn btn-success" role="button">Code</a> </p>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="col-xs-4">
-                        <div class="thumbnail">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
+                <div class="col-xs-4">
+                    <div class="thumbnail">
+                        <img src="images/ComingSoon.jpg">
+                        <div class="caption">
+                            <h3>Coming Soon</h3>
+                            <p></p>
+                            <p><a href="#" class="btn btn-primary" role="button">Live Preview</a> 
+                            <a href="#" id="left" class="btn btn-success" role="button">Code</a> </p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-xs-4">
-                        <div class="thumbnail">
-                            <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </div>
+                <div class="col-xs-4">
+                    <div class="thumbnail">
+                        <img src="images/ComingSoon.jpg">
+                        <div class="caption">
+                            <h3>Coming Soon</h3>
+                            <p></p>
+                            <p><a href="#" class="btn btn-primary" role="button">Live Preview</a> 
+                            <a href="#" id="left" class="btn btn-success" role="button">Code</a> </p> 
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Contact Section -->
+    <!-- Contact Section -->
+    <div id="section3" class="container-fluid">
+        <h1>[ Contact Me ]</h1>
+        <p><span class="glyphicon glyphicon-envelope"></span> Email: JohnsonChen12345@gmail.com</p>
+        <p><span class="glyphicon glyphicon-earphone"></span> Phone Number: 646-***-****</p>
+        <p>Social Media: Facebook-</p>
+    </div>
 
 
-            <!-- Footer -->
+
+</body>
+
+</html>
 
 
-            <!-- Jquery Script -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-            <!--Bootstrap Javascript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-            <!-- Your Javascript -->
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<!-- Jquery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--Bootstrap Javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Your Javascript -->
 
 </body>
 

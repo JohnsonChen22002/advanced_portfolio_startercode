@@ -3,7 +3,7 @@
     font-weight: bold;
     font-size: 35px;
     color: black;
-    background-color: #78A5A3;
+    background-color: #1fd81c;
     border: 2px solid black;
     font-family: Oswald;
     text-align: center;
@@ -14,20 +14,23 @@
 }
 
 #main-nav li {
-    background-color: #044455;
+    background-color: #81ba1f;
     margin-left: 200px;
     margin-top: 5px;
     font-style: italic;
     font-family: oswald;
     font-size: 19px;
     text-shadow: 1px 2px black;
-    color: white;
+    
 }
 
 #navblue {
-    background-color: #044455;
+    background-color: #81ba1f;
 }
 
+#navbarword {
+    color: yellow;
+}
 /* Header CSS */
 
 
@@ -40,15 +43,11 @@
 #Johnson {
     border-radius: 30px;
     border: 2px solid black;
+    margin-left: 75px;
+    margin-top: 40px;
 }
 
-h1 {
-    font-size: 10px;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border-style: double hidden double hidden;
-}
+
 
 #aboutme {
     font-size: 24px;
@@ -57,7 +56,23 @@ h1 {
 
 #jumbotron {
     border: 2px solid black;
+    margin-right: 75px;
+    margin-top: 50px;
 }
+
+/* Project Section CSS */
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#left {
+    margin-left: 150px;
+}
+
+
+
+
 /* Portfolio Item CSS */
 
 
