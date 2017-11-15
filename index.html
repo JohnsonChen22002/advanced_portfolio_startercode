@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Fontawesome CSS  -->
-
+    <script src="https://use.fontawesome.com/a10c7a379a.js"></script>
     <style>
       h1 {
         font-size: 50px;
@@ -36,9 +36,9 @@
     body {
         position: relative; 
     }
-        #section1 { padding-top:50px; height:700px; background-color: #42d9f4;}
+        #section1 { padding-top:50px; height:700px; background-color: #ad42f4;}
         #section2 { padding-top:50px; height:750px; background-color: #dff441;}
-        #section3 { padding-top:50px; height:600px; background-color: #efac26;}
+        #section3 { padding-top:50px; height:600px; background-color: #ff0000;}
     </style>
 </head>
 
@@ -69,19 +69,26 @@
     </nav>
 
     <!-- Portfolio Grid Section -->
-
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-circle portrait" src="images/Johnson.jpg" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Johnson Chen</h1>
+                        <span class="skills">Web Developer - Student - Video Gamer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- About Section -->
     <div id="section1" class="container-fluid">
         <h1>[ About Me ]</h1>
         <div class="row">
-            <div class="col-xs-6">
-                <img id="Johnson" src="images/Johnson.jpg">
-            </div>
-            <div class="col-xs-6">
-                <div id="jumbotron" class="jumbotron">
-                    <p id="aboutme">Hi guys! My name is Johnson Chen. I am 15 years old. I like to code in my free time. I go to High School of Language and Diplomacy. I live in New York. I am currently in ScriptEd Advanced Class. My favorite thing to do in coding is
-                        to copy and paste in order to help me at first, then I change the code to my favor.</p>
-                </div>
+            <div class="col-xs-12">
+                <p id="aboutme">Hi guys! My name is Johnson Chen. I am 15 years old. I like to code in my free time. I go to High School of Language and Diplomacy. I am currently in 10th grade. I live in New York. I am currently in ScriptEd Advanced Class. My favorite
+                    thing to do in coding is to copy and paste in order to help me at first, then I change the code to my favor; I also like to play video games!</p>
             </div>
         </div>
     </div>
@@ -135,35 +142,56 @@
     <!-- Contact Section -->
     <div id="section3" class="container-fluid">
         <h1>[ Contact Me ]</h1>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  >Click For My Contact<
+        <ul class="list-inline">
+            <li>
+                <a href="https://github.com/JohnsonChen22002" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-github"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+
+            <li>
+                <a href="#" class="btn-social btn-outline">
+                            <i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+            <li>
+                <!-- Button trigger modal -->
+                <button type="button" id="add" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+  >Additional Information<
 </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-                    </div>
-                    <div class="modal-body">
-                        <p><span class="glyphicon glyphicon-envelope"></span> Email: JohnsonChen12345@gmail.com</p>
-                        <p><span class="glyphicon glyphicon-earphone"></span> Phone Number: 646-***-****</p>
-                        <p><span class="glyphicon glyphicon-new-window"></span> Social Media: Facebook</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p><span class="glyphicon glyphicon-envelope"></span> Email: JohnsonChen12345@gmail.com</p>
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <a href="mailto:" class="btn btn-lg btn-outline">
+                            <i class="fa fa-paper-plane"></i> Message Me!
+                        </a>
+                                </div>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <p><span class="glyphicon glyphicon-earphone"></span> Phone Number: 646-246-7735</p>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+            </li>
+            <p id="by">By the way, I check my facebook, twitter, and github once per week so be sure to message me through my email or phone! Also, I don't like being phone call by someone unknown so message me before calling.</p>
             </div>
-        </div>
-
-
-    </div>
+            </div>
+            </div>
 
 
 
