@@ -38,6 +38,7 @@
 
 
 /* Header CSS */
+
 header {
     padding-top: 50px;
     height: 700px;
@@ -68,6 +69,7 @@ header .portrait {
     border: 2px solid black;
 
 }
+
 /* Section CSS */
 
 /* About Section CSS */
@@ -205,5 +207,5 @@ footer .footer-below {
     color: black;
     text-align: center;
     margin-top: 100px;
-    
+
 }
